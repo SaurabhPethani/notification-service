@@ -5,10 +5,12 @@ import com.saurabh.notification.dto.NotificationRequest;
 import com.saurabh.notification.dto.NotificationResponse;
 import com.saurabh.notification.messaging.producer.NotificationEventProducer;
 import com.saurabh.notification.service.NotificationService;
+import org.springframework.stereotype.Service;
 
 import java.time.Instant;
 import java.util.UUID;
 
+@Service
 public class NotificationServiceImpl implements NotificationService {
 
     private final NotificationEventProducer producer;
